@@ -6,6 +6,11 @@
   <title>DevTrailsGUC - Login</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="../static/base.css">
+  <style>
+    .btn-grey {
+      --main-blue: #3e4f67;
+    }
+  </style>
 </head>
 <body class="min-h-screen flex items-center justify-center" style="background-color: var(--bg-app);">
 
@@ -13,19 +18,19 @@
     <div class="rounded-lg p-9" style="background-color: var(--bg-card); border: var(--border-thick) solid var(--border-main);">
 
       <header class="text-center mb-8">
-        <h1 class="text-2xl font-semibold mb-1" style="color: var(--cyan-500);">DevTrails</h1>
+        <h1 class="text-2xl font-semibold mb-1" style="color: var(--main-blue);">DevTrails</h1>
         <p class="text-sm" style="color: var(--text-secondary);">Guidewire Unicorn Chase 2026</p>
       </header>
 
       <nav class="space-y-5 mb-6">
-        <a href="#" class="w-full flex items-center gap-2 py-3 px-4 rounded-md font-medium" style="background-color: var(--cyan-500); color: var(--text-main); transition: 150ms;" onmouseover="this.style.backgroundColor='var(--cyan-600)'" onmouseout="this.style.backgroundColor='var(--cyan-500)'">
+        <a href="#" class="w-full flex items-center gap-2 py-3 px-4 rounded-md font-medium" style="background-color: var(--main-blue); color: var(--text-main); transition: 150ms;" onmouseover="this.style.backgroundColor='var(--hover-grey)'" onmouseout="this.style.backgroundColor='var(--main-blue)'">
           <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"/>
           </svg>
           Login as Participant
         </a>
 
-        <a href="#" class="w-full flex items-center gap-2 py-3 px-4 rounded-md font-medium" style="background-color: var(--btn-secondary-bg); color: var(--text-main); transition: 150ms;" onmouseover="this.style.backgroundColor='var(--cyan-600)'" onmouseout="this.style.backgroundColor='var(--btn-secondary-bg)'">
+        <a href="#" class="btn-grey w-full flex items-center gap-2 py-3 px-4 rounded-md font-medium" style="background-color: var(--main-blue); color: var(--text-main); transition: 150ms;" onmouseover="this.style.backgroundColor='var(--hover-grey)'" onmouseout="this.style.backgroundColor='var(--main-blue)'">
           <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/>
           </svg>
@@ -40,7 +45,7 @@
           <div class="flex-1 h-px" style="background-color: var(--border-main);"></div>
         </div>
 
-        <a href="#" class="text-sm flex items-center gap-1" style="color: var(--text-secondary); transition: 150ms;" onmouseover="this.style.color='var(--cyan-500)'" onmouseout="this.style.color='var(--text-secondary)'">
+        <a href="#" class="text-sm flex items-center gap-1" style="color: var(--text-secondary); transition: 150ms;" onmouseover="this.style.color='var(--main-blue)'" onmouseout="this.style.color='var(--text-secondary)'">
           <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4"/>
           </svg>
