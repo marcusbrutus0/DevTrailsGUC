@@ -39,7 +39,7 @@
   --border-thick: 2px; /* for cards and other containers */
 
   /* font and text sizes */
-  --page-title-size: 1.875rem; /* Page Titles */
+  --page-title-size: 1.7rem; /* Page Titles */
   --card-title-size: 1.25rem; /* Card Titles */
   --text-size: 1rem; /* Standard text */
   --subscript-text-size: 0.5rem; /* subcscript text */
@@ -53,6 +53,7 @@
   --space-sm: 1rem;
   --space-md: 1.5rem;
   --space-lg: 2rem;
+  --def-card-gap: 1.25rem;
 
   /* Border Radius */
   --radius-sm: 0.375rem;
