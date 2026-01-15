@@ -2,12 +2,13 @@
   /* Background colors  */
   --bg-app: #0f172a;
   --bg-card: #1e293b;
+  --bg-card-container: #101d31;
+  --bg-grey: #253242; /* hover state for all buttons */
 
   /* Brand Colors */
   --main-blue: #06b6d4; /* primary buttons */
-  --secondary-blue: oklch(
-    30.2% 0.056 229.695
-  ); /* sidebar buttons on click, diamond tier bg and some icons */
+  --secondary-blue: oklch(30.2% 0.056 229.695);
+  /* sidebar buttons on click, diamond tier bg and some icons */
   --hover-grey: #475569; /* hover state for all buttons */
 
   /* Text color variables */
@@ -55,6 +56,7 @@
   --space-xs-plus: 0.85rem;
   --space-sm: 1rem;
   --space-md: 1.5rem;
+  --space-md-plus: 1.75rem;
   --space-lg: 2rem;
   --def-card-gap: 1.25rem;
 
