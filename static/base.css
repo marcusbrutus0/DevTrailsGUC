@@ -17,11 +17,11 @@
 
   /* Tier and tier background colors */
   --tier-gold: #eab308;
-  --tier-gold-bg: #b78b08;
+  --tier-gold-bg: #765b09;
   --tier-silver: #94a3b8;
-  --tier-silver-bg: #7d8a9b;
+  --tier-silver-bg: #48505b;
   --tier-bronze: #f97316;
-  --tier-bronze-bg: #bb5a14;
+  --tier-bronze-bg: #67310b;
 
   /* Status and status background colors */
   --status-success: #10b981; /* Credit / Live / Active */
@@ -42,7 +42,7 @@
   --page-title-size: 1.7rem; /* Page Titles */
   --card-title-size: 1.25rem; /* Card Titles */
   --text-size: 1rem; /* Standard text */
-  --subscript-text-size: 0.5rem; /* subcscript text */
+  --subscript-text-size: 0.5rem; /* subscript text */
 
   /* Sidebar and header */
   --sidebar-width: 300px;
@@ -64,7 +64,7 @@
   --radius-lg: 0.75rem;
 }
 
-/* Layouts for containers 3 */
+/* Layouts for containers  */
 body {
   margin: 0;
   overflow: hidden;
