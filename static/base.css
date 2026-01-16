@@ -3,7 +3,7 @@
   --bg-app: #0f172a;
   --bg-card: #1e293b;
   --bg-card-container: #101d31;
-  --bg-grey: #253242; /* hover state for all buttons */
+  --bg-grey: #454e59; /* hover state for all buttons */
 
   /* Brand Colors */
   --main-blue: #06b6d4; /* primary buttons */
@@ -13,7 +13,7 @@
 
   /* Text color variables */
   --text-main: #ffffff;
-  --text-secondary: #94a3b8;
+  --text-secondary: #9dadc4;
   --text-muted: #64748b;
 
   /* Tier and tier background colors */
