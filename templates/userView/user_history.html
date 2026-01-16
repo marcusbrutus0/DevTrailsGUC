@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DevTrails - Transaction History</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="../../static/base.css">
+</head>
+<body style="background-color: var(--bg-app); color: var(--text-main); display: flex; min-height: 100vh;">
+
+  <aside style="width: var(--sidebar-width); background-color: var(--bg-app); display: flex; flex-direction: column; border-right: var(--border-thin) solid var(--border-main);">
+
+    <header style="padding: var(--space-md); border-bottom: var(--border-thin) solid var(--border-main); margin-bottom: var(--space-xss);">
+      <h1 style="color: var(--main-blue); font-size: var(--card-title-size); font-weight: 600;">DevTrails</h1>
+      <p style="color: var(--text-muted); font-size: 0.75rem;">Unicorn Chase 2026</p>
+    </header>
+
+    <nav style="flex: 1; display: flex; flex-direction: column; gap: 0.25rem; padding: var(--space-md); border-bottom: var(--border-thin) solid var(--border-main); margin-top: calc(var(--space-sm) * -1);">
+      <a href="#" style="display: flex; align-items: center; gap: 0.75rem; padding: 0.75rem; border-radius: var(--radius-md); color: var(--text-secondary); text-decoration: none;" onmousedown="this.style.backgroundColor='var(--secondary-blue)'; this.style.color='var(--main-blue)';" onmouseup="this.style.backgroundColor='transparent'; this.style.color='var(--text-secondary)';" onmouseleave="this.style.backgroundColor='transparent'; this.style.color='var(--text-secondary)';">
+        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"/>
+        </svg>
+        <span style="font-size: 0.875rem;">Dashboard</span>
+      </a>
+
+      <a href="#" style="display: flex; align-items: center; gap: 0.75rem; padding: 0.75rem; border-radius: var(--radius-md); color: var(--text-secondary); text-decoration: none;" onmousedown="this.style.backgroundColor='var(--secondary-blue)'; this.style.color='var(--main-blue)';" onmouseup="this.style.backgroundColor='transparent'; this.style.color='var(--text-secondary)';" onmouseleave="this.style.backgroundColor='transparent'; this.style.color='var(--text-secondary)';">
+        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/>
+        </svg>
+        <span style="font-size: 0.875rem;">Leaderboard</span>
+      </a>
+
+      <a href="#" style="display: flex; align-items: center; gap: 0.75rem; padding: 0.75rem; border-radius: var(--radius-md); background-color: var(--secondary-blue); color: var(--main-blue); text-decoration: none;">
+        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/>
+        </svg>
+        <span style="font-size: 0.875rem;">History</span>
+      </a>
+
+      <a href="#" style="display: flex; align-items: center; gap: 0.75rem; padding: 0.75rem; border-radius: var(--radius-md); color: var(--text-secondary); text-decoration: none;" onmousedown="this.style.backgroundColor='var(--secondary-blue)'; this.style.color='var(--main-blue)';" onmouseup="this.style.backgroundColor='transparent'; this.style.color='var(--text-secondary)';" onmouseleave="this.style.backgroundColor='transparent'; this.style.color='var(--text-secondary)';">
+        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 5.882V19.24a1.76 1.76 0 01-3.417.592l-2.147-6.15M18 13a3 3 0 100-6M5.436 13.683A4.001 4.001 0 017 6h1.832c4.1 0 7.625-1.234 9.168-3v14c-1.543-1.766-5.067-3-9.168-3H7a3.988 3.988 0 01-1.564-.317z"/>
+        </svg>
+        <span style="font-size: 0.875rem;">Announcements</span>
+      </a>
+
+      <a href="#" style="display: flex; align-items: center; gap: 0.75rem; padding: 0.75rem; border-radius: var(--radius-md); color: var(--text-secondary); text-decoration: none;" onmousedown="this.style.backgroundColor='var(--secondary-blue)'; this.style.color='var(--main-blue)';" onmouseup="this.style.backgroundColor='transparent'; this.style.color='var(--text-secondary)';" onmouseleave="this.style.backgroundColor='transparent'; this.style.color='var(--text-secondary)';">
+        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"/>
+        </svg>
+        <span style="font-size: 0.875rem;">Service Requests</span>
+      </a>
+
+      <a href="#" style="display: flex; align-items: center; gap: 0.75rem; padding: 0.75rem; border-radius: var(--radius-md); color: var(--text-secondary); text-decoration: none;" onmousedown="this.style.backgroundColor='var(--secondary-blue)'; this.style.color='var(--main-blue)';" onmouseup="this.style.backgroundColor='transparent'; this.style.color='var(--text-secondary)';" onmouseleave="this.style.backgroundColor='transparent'; this.style.color='var(--text-secondary)';">
+        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/>
+        </svg>
+        <span style="font-size: 0.875rem;">Quiz</span>
+      </a>
+    </nav>
+
+    <footer style="padding: var(--space-md);">
+      <a href="#" style="display: flex; align-items: center; gap: 0.75rem; color: var(--text-secondary); text-decoration: none; font-size: 0.875rem;">
+        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 16l4-4m0 0l-4-4m4 4H7m6 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h4a3 3 0 013 3v1"/>
+        </svg>
+        Logout
+      </a>
+    </footer>
+
+  </aside>
+
+  <main style="flex: 1; padding: var(--space-lg);">
+
+    <header style="display: flex; justify-content: space-between; align-items: center; margin-bottom: var(--space-lg);">
+      <h1 style="font-size: var(--page-title-size); font-weight: 600;">Transaction History</h1>
+      <button style="display: flex; align-items: center; gap: var(--space-xs); background-color: var(--main-blue); color: var(--bg-app); padding: var(--space-xs) var(--space-sm); border-radius: var(--radius-md); border: none; cursor: pointer; font-size: 0.875rem; font-weight: 500;">
+        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"/>
+        </svg>
+        Export
+      </button>
+    </header>
+
+    <section style="background-color: var(--bg-card); border-radius: var(--radius-md); border: var(--border-thick) solid var(--border-main); overflow: hidden;">
+      <table style="width: 100%; border-collapse: collapse;">
+        <thead>
+          <tr style="border-bottom: var(--border-thin) solid var(--border-main);">
+            <th style="text-align: left; padding: var(--space-sm) var(--space-md); color: var(--text-muted); font-size: 0.75rem; text-transform: uppercase; font-weight: 500;">Date</th>
+            <th style="text-align: left; padding: var(--space-sm) var(--space-md); color: var(--text-muted); font-size: 0.75rem; text-transform: uppercase; font-weight: 500;">Type</th>
+            <th style="text-align: left; padding: var(--space-sm) var(--space-md); color: var(--text-muted); font-size: 0.75rem; text-transform: uppercase; font-weight: 500;">Amount</th>
+            <th style="text-align: left; padding: var(--space-sm) var(--space-md); color: var(--text-muted); font-size: 0.75rem; text-transform: uppercase; font-weight: 500;">Reason</th>
+            <th style="text-align: left; padding: var(--space-sm) var(--space-md); color: var(--text-muted); font-size: 0.75rem; text-transform: uppercase; font-weight: 500;">By</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr style="border-bottom: var(--border-thin) solid var(--border-main);">
+            <td style="padding: var(--space-sm) var(--space-md); color: var(--text-secondary);">2026-01-15</td>
+            <td style="padding: var(--space-sm) var(--space-md);">
+              <span style="background-color: var(--status-success-bg); color: var(--status-success); padding: var(--space-xss) var(--space-xs); border-radius: var(--radius-sm); font-size: 0.75rem; text-transform: uppercase;">Credit</span>
+            </td>
+            <td style="padding: var(--space-sm) var(--space-md); color: var(--status-success); font-weight: 500;">+DX 40,000</td>
+            <td style="padding: var(--space-sm) var(--space-md);">Seed Funding - 5 Stars</td>
+            <td style="padding: var(--space-sm) var(--space-md); color: var(--text-muted);">System</td>
+          </tr>
+          <tr style="border-bottom: var(--border-thin) solid var(--border-main);">
+            <td style="padding: var(--space-sm) var(--space-md); color: var(--text-secondary);">2026-01-14</td>
+            <td style="padding: var(--space-sm) var(--space-md);">
+              <span style="background-color: var(--status-error-bg); color: var(--status-error); padding: var(--space-xss) var(--space-xs); border-radius: var(--radius-sm); font-size: 0.75rem; text-transform: uppercase;">Debit</span>
+            </td>
+            <td style="padding: var(--space-sm) var(--space-md); color: var(--status-error); font-weight: 500;">DX 8,000</td>
+            <td style="padding: var(--space-sm) var(--space-md);">Weekly Infrastructure Burn</td>
+            <td style="padding: var(--space-sm) var(--space-md); color: var(--text-muted);">System</td>
+          </tr>
+          <tr style="border-bottom: var(--border-thin) solid var(--border-main);">
+            <td style="padding: var(--space-sm) var(--space-md); color: var(--text-secondary);">2026-01-13</td>
+            <td style="padding: var(--space-sm) var(--space-md);">
+              <span style="background-color: var(--status-success-bg); color: var(--status-success); padding: var(--space-xss) var(--space-xs); border-radius: var(--radius-sm); font-size: 0.75rem; text-transform: uppercase;">Credit</span>
+            </td>
+            <td style="padding: var(--space-sm) var(--space-md); color: var(--status-success); font-weight: 500;">+DX 6,000</td>
+            <td style="padding: var(--space-sm) var(--space-md);">CTF Challenge - Hard Flag</td>
+            <td style="padding: var(--space-sm) var(--space-md); color: var(--text-muted);">System</td>
+          </tr>
+          <tr style="border-bottom: var(--border-thin) solid var(--border-main);">
+            <td style="padding: var(--space-sm) var(--space-md); color: var(--text-secondary);">2026-01-12</td>
+            <td style="padding: var(--space-sm) var(--space-md);">
+              <span style="background-color: var(--status-success-bg); color: var(--status-success); padding: var(--space-xss) var(--space-xs); border-radius: var(--radius-sm); font-size: 0.75rem; text-transform: uppercase;">Credit</span>
+            </td>
+            <td style="padding: var(--space-sm) var(--space-md); color: var(--status-success); font-weight: 500;">+DX 8,000</td>
+            <td style="padding: var(--space-sm) var(--space-md);">Quiz 1st Place + Bonus</td>
+            <td style="padding: var(--space-sm) var(--space-md); color: var(--text-muted);">System</td>
+          </tr>
+          <tr>
+            <td style="padding: var(--space-sm) var(--space-md); color: var(--text-secondary);">2026-01-11</td>
+            <td style="padding: var(--space-sm) var(--space-md);">
+              <span style="background-color: var(--status-error-bg); color: var(--status-error); padding: var(--space-xss) var(--space-xs); border-radius: var(--radius-sm); font-size: 0.75rem; text-transform: uppercase;">Debit</span>
+            </td>
+            <td style="padding: var(--space-sm) var(--space-md); color: var(--status-error); font-weight: 500;">DX 4,000</td>
+            <td style="padding: var(--space-sm) var(--space-md);">Office Hours Purchase</td>
+            <td style="padding: var(--space-sm) var(--space-md); color: var(--text-muted);">Admin</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+  </main>
+
+</body>
+</html>
