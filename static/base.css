@@ -26,9 +26,9 @@
 
   /* Status and status background colors */
   --status-success: #10b981; /* Credit / Live / Active */
-  --status-success-bg: #0f8d63;
+  --status-success-bg: #0b6044;
   --status-error: #ef4444; /* Debit / Rejected / Warning */
-  --status-error-bg: #ad3232;
+  --status-error-bg: #762323;
 
   /* Borders */
   --border-main: #383f49;
